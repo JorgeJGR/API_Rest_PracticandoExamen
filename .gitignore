@@ -1,0 +1,25 @@
+# =====================
+# Java / NetBeans
+# =====================
+
+# Compilación y despliegue
+/build/
+/dist/
+/target/
+
+# Binarios
+*.class
+*.jar
+*.war
+
+# NetBeans
+/nbproject/private/
+/nbproject/build-impl.xml
+/nbproject/genfiles.properties
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
