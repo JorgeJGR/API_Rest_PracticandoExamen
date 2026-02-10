@@ -1,0 +1,325 @@
+{
+  "info": {
+    "_postman_id": "93192bf5-1df5-49d7-b1fd-5076749a349f",
+    "name": "Practicando Examen 2ª Eva",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "40354063"
+  },
+  "item": [
+    {
+      "name": "Actualizar Departamento",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"idDepartamento\": 1,\r\n    \"nombre\": \"Recursos Humanos\",\r\n    \"ubicacion\": \"Edificio AAA\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/departamentos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "departamentos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Actualizar Empleado",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"apellidos\": \"Guijarro Rabasco\",\r\n    \"email\": \"jorge.garcia@empresa.com\",\r\n    \"idEmpleado\": 1,\r\n    \"nombre\": \"Jorge\",\r\n    \"telefono\": \"123456789\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/empleados",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "empleados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Departamento",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"idDepartamento\": 0,\r\n    \"nombre\": \"Mantenimiento\",\r\n    \"ubicacion\": \"Edificio C\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/departamentos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "departamentos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Crear Empleado",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"apellidos\": \"Gutierrez Martínez\",\r\n    \"email\": \"anabel.garcia@empresa.com\",\r\n    \"idEmpleado\": 0,\r\n    \"nombre\": \"Anabel\",\r\n    \"telefono\": \"133476780\"\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/empleados",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "empleados"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar Empleado",
+      "request": {
+        "method": "DELETE",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": ""
+        },
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/empleados/5",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "empleados",
+            "5"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Eliminar departamento",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/departamentos/4",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "departamentos",
+            "4"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "JPQL Empleados de un departamento",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/empleados/departamento/2",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "empleados",
+            "departamento",
+            "2"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NamedQuery Buscar departamento por nombre",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/departamentos/nombre/Ventas",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "departamentos",
+            "nombre",
+            "Ventas"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "NamedQuery buscar empleado por email",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json",
+            "type": "text"
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json",
+            "type": "text"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:8080/apirestjpa/empleados/empleados/email/jorge.garcia@empresa.com",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "apirestjpa",
+            "empleados",
+            "empleados",
+            "email",
+            "jorge.garcia@empresa.com"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
